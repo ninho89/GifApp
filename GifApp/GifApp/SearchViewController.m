@@ -7,10 +7,11 @@
 //
 
 #import "SearchViewController.h"
-#import "CustomGifTableViewCell.h"
-#import "GiffyApiHelper.h"
+#import "GifApiHelper.h"
 #import "GifParser.h"
 #import "Gif.h"
+#import "CustomGifTableViewCell.h"
+#import <UIImageView+WebCache.h>
 #import "DetailGifViewController.h"
 
 NSString *const kCellSearch = @"CellID";
@@ -20,28 +21,23 @@ NSString *const kCellSearch = @"CellID";
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *listGif;
 @property (strong, nonatomic)  UISearchBar *searchGif;
-
-
 @end
 
 @implementation SearchViewController
+
+#pragma mark - View Life Cycles
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     self.listGif = [[NSMutableArray array]mutableCopy];
+    
     [self registerCustomCell];
     
     self.searchGif = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 44)];
     [self.view addSubview:self.searchGif];
     self.searchGif.delegate = self;
     
-}
-
--(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    [self downloadGiffy:self.searchGif.text];
-    [self.searchGif resignFirstResponder];
-    [self.tableView reloadData];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -54,18 +50,29 @@ NSString *const kCellSearch = @"CellID";
     // Dispose of any resources that can be recreated.
 }
 
--(void) registerCustomCell{
-    [self.tableView registerNib:[UINib nibWithNibName:@"CustomTableViewCell" bundle:nil]forCellReuseIdentifier:kCellSearch];
-}
+#pragma mark - Utils Methods
 
 -(void)downloadGiffy:(NSString *)endPoint{
-    GiffyApiHelper *gh = [[GiffyApiHelper alloc]init];
+    GifApiHelper *gh = [[GifApiHelper alloc]init];
     [gh gifCompletionWithSearch:endPoint completionBlock:^(NSData *resultData) {
         GifParser *parser = [[GifParser alloc]init];
         self.listGif = [parser gifData:resultData];
         [self.tableView reloadData];
     }];
 }
+
+-(void) registerCustomCell{
+    [self.tableView registerNib:[UINib nibWithNibName:@"CustomGifTableViewCell" bundle:nil]forCellReuseIdentifier:kCellSearch];
+}
+
+#pragma mark - UISearchBar Methods
+
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [self downloadGiffy:self.searchGif.text];
+    [self.searchGif resignFirstResponder];
+    [self.tableView reloadData];
+}
+
 
 #pragma mark - TableView DataSource Methods
 
@@ -82,12 +89,11 @@ NSString *const kCellSearch = @"CellID";
     CustomGifTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:kCellSearch forIndexPath:indexPath];
     Gif *gif = self.listGif[indexPath.row];
     
-//    [cell.imageGifCustom sd_setImageWithURL:[NSURL URLWithString:giffy.giffyURL]  placeholderImage:[UIImage imageNamed:@"first"]];
-//    
+    [cell.imageGifCustom sd_setImageWithURL:[NSURL URLWithString:gif.gifURL]  placeholderImage:[UIImage imageNamed:@"first"]];
+    
     
     return cell;
 }
-
 
 #pragma mark - TableView Delegate
 
@@ -100,9 +106,9 @@ NSString *const kCellSearch = @"CellID";
     [self.navigationController pushViewController:detailGifViewController animated:YES];
 }
 
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 300;
 }
+
 
 @end

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GiffyApiHelper : NSObject
+@interface GifApiHelper : NSObject
 
 -(void)gifCompletionWithSearch:(NSString *) endPoint completionBlock:(void (^)(NSData *resultData)) completionBlock;
 

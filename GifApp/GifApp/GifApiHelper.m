@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Filippo Aresu. All rights reserved.
 //
 
-#import "GiffyApiHelper.h"
+#import "GifApiHelper.h"
 
-@implementation GiffyApiHelper
+@implementation GifApiHelper
 
 -(void)gifCompletionWithSearch:(NSString *) endPoint completionBlock:(void (^)(NSData *resultData)) completionBlock
 {
@@ -18,8 +18,8 @@
     [[session dataTaskWithURL:[NSURL URLWithString:giffyURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         //Esto es para probar que funciona y que devuelve un diccionario
-        //NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-        //NSLog(@"json %@", json);
+//        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+//        NSLog(@"json %@", json);
         
         completionBlock(data);
         
