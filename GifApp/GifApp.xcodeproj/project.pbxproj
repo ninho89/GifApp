@@ -18,6 +18,7 @@
 		E6023CAF1AB47A21002B7CC9 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CAE1AB47A21002B7CC9 /* CoreDataStack.m */; };
 		E6023CB71AB47B65002B7CC9 /* Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CB61AB47B65002B7CC9 /* Gif.m */; };
 		E6023CBA1AB47C3F002B7CC9 /* GiffyApiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CB91AB47C3F002B7CC9 /* GiffyApiHelper.m */; };
+		E6023CBD1AB47C9F002B7CC9 /* GifParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CBC1AB47C9F002B7CC9 /* GifParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E6023CB61AB47B65002B7CC9 /* Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gif.m; sourceTree = "<group>"; };
 		E6023CB81AB47C3F002B7CC9 /* GiffyApiHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiffyApiHelper.h; sourceTree = "<group>"; };
 		E6023CB91AB47C3F002B7CC9 /* GiffyApiHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiffyApiHelper.m; sourceTree = "<group>"; };
+		E6023CBB1AB47C9F002B7CC9 /* GifParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifParser.h; sourceTree = "<group>"; };
+		E6023CBC1AB47C9F002B7CC9 /* GifParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 				E6023CB61AB47B65002B7CC9 /* Gif.m */,
 				E6023CB81AB47C3F002B7CC9 /* GiffyApiHelper.h */,
 				E6023CB91AB47C3F002B7CC9 /* GiffyApiHelper.m */,
+				E6023CBB1AB47C9F002B7CC9 /* GifParser.h */,
+				E6023CBC1AB47C9F002B7CC9 /* GifParser.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6023CBA1AB47C3F002B7CC9 /* GiffyApiHelper.m in Sources */,
+				E6023CBD1AB47C9F002B7CC9 /* GifParser.m in Sources */,
 				E6023CB71AB47B65002B7CC9 /* Gif.m in Sources */,
 				E6023CAF1AB47A21002B7CC9 /* CoreDataStack.m in Sources */,
 				E6023C8D1AB479A8002B7CC9 /* GifApp.xcdatamodeld in Sources */,
