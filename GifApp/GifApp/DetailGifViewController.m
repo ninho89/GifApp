@@ -8,6 +8,7 @@
 
 #import "DetailGifViewController.h"
 #import "UIImageView+WebCache.h"
+#import "GifEntity.h"
 
 @interface DetailGifViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageGif;
@@ -36,8 +37,24 @@
 
 - (void)saveGifCoreData:(id)sender {
     
+    GifEntity *gif = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([GifEntity class]) inManagedObjectContext:self.managedObjectContext];
     
+    gif.urlGif = self.gif.gifURL;
     
+    NSError *error;
+    [self.managedObjectContext save:&error];
+    
+    if(!error){
+        NSLog(@"no error");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"GIF"
+                                                        message:@"Añadido a favoritos"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }else{
+        NSLog(@"error");
+    }
     
 }
 

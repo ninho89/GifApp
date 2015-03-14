@@ -26,6 +26,7 @@
 		E6023CCA1AB47EAB002B7CC9 /* CustomGifTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CC81AB47EAB002B7CC9 /* CustomGifTableViewCell.m */; };
 		E6023CCB1AB47EAB002B7CC9 /* CustomGifTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6023CC91AB47EAB002B7CC9 /* CustomGifTableViewCell.xib */; };
 		E6023CCD1AB484C9002B7CC9 /* first.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E6023CCC1AB484C9002B7CC9 /* first.pdf */; };
+		E6023CD01AB48EC9002B7CC9 /* GifEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CCF1AB48EC9002B7CC9 /* GifEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		E6023CC81AB47EAB002B7CC9 /* CustomGifTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGifTableViewCell.m; sourceTree = "<group>"; };
 		E6023CC91AB47EAB002B7CC9 /* CustomGifTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomGifTableViewCell.xib; sourceTree = "<group>"; };
 		E6023CCC1AB484C9002B7CC9 /* first.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = first.pdf; sourceTree = "<group>"; };
+		E6023CCE1AB48EC9002B7CC9 /* GifEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifEntity.h; sourceTree = "<group>"; };
+		E6023CCF1AB48EC9002B7CC9 /* GifEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,7 @@
 				E6023C941AB479A8002B7CC9 /* Images.xcassets */,
 				E6023CCC1AB484C9002B7CC9 /* first.pdf */,
 				E6023C8B1AB479A8002B7CC9 /* GifApp.xcdatamodeld */,
+				E6023CD11AB48ECF002B7CC9 /* Entitites */,
 				E6023C841AB479A8002B7CC9 /* Supporting Files */,
 			);
 			path = GifApp;
@@ -230,6 +234,15 @@
 				E6023CBF1AB47D44002B7CC9 /* GifDownloader.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E6023CD11AB48ECF002B7CC9 /* Entitites */ = {
+			isa = PBXGroup;
+			children = (
+				E6023CCE1AB48EC9002B7CC9 /* GifEntity.h */,
+				E6023CCF1AB48EC9002B7CC9 /* GifEntity.m */,
+			);
+			name = Entitites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6023CD01AB48EC9002B7CC9 /* GifEntity.m in Sources */,
 				E6023CBA1AB47C3F002B7CC9 /* GifApiHelper.m in Sources */,
 				E6023CBD1AB47C9F002B7CC9 /* GifParser.m in Sources */,
 				E6023CC31AB47E2F002B7CC9 /* SearchViewController.m in Sources */,
