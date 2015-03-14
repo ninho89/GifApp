@@ -17,11 +17,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0bo-jp-aKX"/>
+                    <navigationItem key="navigationItem" id="0bo-jp-aKX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="7jX-PV-Pu7"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1092" y="249"/>
+            <point key="canvasLocation" x="1002" y="-444"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FfB-R3-8A0">
