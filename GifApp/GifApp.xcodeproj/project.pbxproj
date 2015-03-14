@@ -21,6 +21,7 @@
 		E6023CBD1AB47C9F002B7CC9 /* GifParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CBC1AB47C9F002B7CC9 /* GifParser.m */; };
 		E6023CC01AB47D44002B7CC9 /* GifDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CBF1AB47D44002B7CC9 /* GifDownloader.m */; };
 		E6023CC31AB47E2F002B7CC9 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CC21AB47E2F002B7CC9 /* SearchViewController.m */; };
+		E6023CC61AB47E69002B7CC9 /* DetailGifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CC51AB47E69002B7CC9 /* DetailGifViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		E6023CBF1AB47D44002B7CC9 /* GifDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifDownloader.m; sourceTree = "<group>"; };
 		E6023CC11AB47E2F002B7CC9 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		E6023CC21AB47E2F002B7CC9 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		E6023CC41AB47E69002B7CC9 /* DetailGifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailGifViewController.h; sourceTree = "<group>"; };
+		E6023CC51AB47E69002B7CC9 /* DetailGifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailGifViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				E6023C8F1AB479A8002B7CC9 /* MainViewController.m */,
 				E6023CC11AB47E2F002B7CC9 /* SearchViewController.h */,
 				E6023CC21AB47E2F002B7CC9 /* SearchViewController.m */,
+				E6023CC41AB47E69002B7CC9 /* DetailGifViewController.h */,
+				E6023CC51AB47E69002B7CC9 /* DetailGifViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				E6023C8A1AB479A8002B7CC9 /* AppDelegate.m in Sources */,
 				E6023C901AB479A8002B7CC9 /* MainViewController.m in Sources */,
 				E6023C871AB479A8002B7CC9 /* main.m in Sources */,
+				E6023CC61AB47E69002B7CC9 /* DetailGifViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
