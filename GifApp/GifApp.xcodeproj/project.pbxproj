@@ -20,6 +20,7 @@
 		E6023CBA1AB47C3F002B7CC9 /* GiffyApiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CB91AB47C3F002B7CC9 /* GiffyApiHelper.m */; };
 		E6023CBD1AB47C9F002B7CC9 /* GifParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CBC1AB47C9F002B7CC9 /* GifParser.m */; };
 		E6023CC01AB47D44002B7CC9 /* GifDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CBF1AB47D44002B7CC9 /* GifDownloader.m */; };
+		E6023CC31AB47E2F002B7CC9 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CC21AB47E2F002B7CC9 /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		E6023CBC1AB47C9F002B7CC9 /* GifParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifParser.m; sourceTree = "<group>"; };
 		E6023CBE1AB47D44002B7CC9 /* GifDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifDownloader.h; sourceTree = "<group>"; };
 		E6023CBF1AB47D44002B7CC9 /* GifDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifDownloader.m; sourceTree = "<group>"; };
+		E6023CC11AB47E2F002B7CC9 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		E6023CC21AB47E2F002B7CC9 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 			children = (
 				E6023C8E1AB479A8002B7CC9 /* MainViewController.h */,
 				E6023C8F1AB479A8002B7CC9 /* MainViewController.m */,
+				E6023CC11AB47E2F002B7CC9 /* SearchViewController.h */,
+				E6023CC21AB47E2F002B7CC9 /* SearchViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			files = (
 				E6023CBA1AB47C3F002B7CC9 /* GiffyApiHelper.m in Sources */,
 				E6023CBD1AB47C9F002B7CC9 /* GifParser.m in Sources */,
+				E6023CC31AB47E2F002B7CC9 /* SearchViewController.m in Sources */,
 				E6023CB71AB47B65002B7CC9 /* Gif.m in Sources */,
 				E6023CAF1AB47A21002B7CC9 /* CoreDataStack.m in Sources */,
 				E6023C8D1AB479A8002B7CC9 /* GifApp.xcdatamodeld in Sources */,
