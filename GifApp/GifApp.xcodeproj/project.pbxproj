@@ -16,6 +16,7 @@
 		E6023C981AB479A8002B7CC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6023C961AB479A8002B7CC9 /* LaunchScreen.xib */; };
 		E6023CA41AB479A8002B7CC9 /* GifAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CA31AB479A8002B7CC9 /* GifAppTests.m */; };
 		E6023CAF1AB47A21002B7CC9 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CAE1AB47A21002B7CC9 /* CoreDataStack.m */; };
+		E6023CB71AB47B65002B7CC9 /* Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CB61AB47B65002B7CC9 /* Gif.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		E6023CA31AB479A8002B7CC9 /* GifAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifAppTests.m; sourceTree = "<group>"; };
 		E6023CAD1AB47A21002B7CC9 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		E6023CAE1AB47A21002B7CC9 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		E6023CB51AB47B65002B7CC9 /* Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gif.h; sourceTree = "<group>"; };
+		E6023CB61AB47B65002B7CC9 /* Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gif.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 				E6023CB01AB47A28002B7CC9 /* AppDelegate */,
 				E6023CB11AB47A30002B7CC9 /* CoreData */,
 				E6023CB21AB47A36002B7CC9 /* Controllers */,
+				E6023CB41AB47B4E002B7CC9 /* Model */,
 				E6023CB31AB47A3E002B7CC9 /* Views */,
 				E6023C941AB479A8002B7CC9 /* Images.xcassets */,
 				E6023C8B1AB479A8002B7CC9 /* GifApp.xcdatamodeld */,
@@ -157,6 +161,15 @@
 				E6023C961AB479A8002B7CC9 /* LaunchScreen.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		E6023CB41AB47B4E002B7CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6023CB51AB47B65002B7CC9 /* Gif.h */,
+				E6023CB61AB47B65002B7CC9 /* Gif.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6023CB71AB47B65002B7CC9 /* Gif.m in Sources */,
 				E6023CAF1AB47A21002B7CC9 /* CoreDataStack.m in Sources */,
 				E6023C8D1AB479A8002B7CC9 /* GifApp.xcdatamodeld in Sources */,
 				E6023C8A1AB479A8002B7CC9 /* AppDelegate.m in Sources */,
