@@ -7,8 +7,10 @@
 //
 
 #import "DetailGifViewController.h"
+#import "UIImageView+WebCache.h"
 
 @interface DetailGifViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageGif;
 
 @end
 
@@ -17,21 +19,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(saveGifCoreData:)];
+    
+    [self.imageGif sd_setImageWithURL:[NSURL URLWithString:self.gif.gifURL] placeholderImage:[UIImage imageNamed:@"first"]];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Buttons Method
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)saveGifCoreData:(id)sender {
+    
+    
+    
+    
 }
-*/
+
 
 @end

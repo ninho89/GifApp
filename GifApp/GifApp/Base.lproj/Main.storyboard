@@ -96,6 +96,9 @@
                             <constraint firstItem="Wg8-DP-Pyj" firstAttribute="top" secondItem="hbL-s1-iq9" secondAttribute="bottom" constant="250" id="rEY-m0-eeM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageGif" destination="hbL-s1-iq9" id="j1I-rY-dwJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJc-e7-spA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
