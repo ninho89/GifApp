@@ -95,7 +95,7 @@ NSString *const kCellSearch = @"CellID";
     
     DetailGifViewController *detailGifViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"detailGifViewController"];
     
-    detailGifViewController.giffy = self.listGif[indexPath.row];
+    detailGifViewController.gif = self.listGif[indexPath.row];
     detailGifViewController.managedObjectContext = self.managedObjectContext;
     [self.navigationController pushViewController:detailGifViewController animated:YES];
 }

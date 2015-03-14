@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Gif.h"
 
 @interface DetailGifViewController : UIViewController
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic,strong) Gif *gif;
 
 @end
