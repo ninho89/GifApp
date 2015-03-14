@@ -17,6 +17,7 @@
 		E6023CA41AB479A8002B7CC9 /* GifAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CA31AB479A8002B7CC9 /* GifAppTests.m */; };
 		E6023CAF1AB47A21002B7CC9 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CAE1AB47A21002B7CC9 /* CoreDataStack.m */; };
 		E6023CB71AB47B65002B7CC9 /* Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CB61AB47B65002B7CC9 /* Gif.m */; };
+		E6023CBA1AB47C3F002B7CC9 /* GiffyApiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CB91AB47C3F002B7CC9 /* GiffyApiHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		E6023CAE1AB47A21002B7CC9 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		E6023CB51AB47B65002B7CC9 /* Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gif.h; sourceTree = "<group>"; };
 		E6023CB61AB47B65002B7CC9 /* Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gif.m; sourceTree = "<group>"; };
+		E6023CB81AB47C3F002B7CC9 /* GiffyApiHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiffyApiHelper.h; sourceTree = "<group>"; };
+		E6023CB91AB47C3F002B7CC9 /* GiffyApiHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiffyApiHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,8 @@
 			children = (
 				E6023CB51AB47B65002B7CC9 /* Gif.h */,
 				E6023CB61AB47B65002B7CC9 /* Gif.m */,
+				E6023CB81AB47C3F002B7CC9 /* GiffyApiHelper.h */,
+				E6023CB91AB47C3F002B7CC9 /* GiffyApiHelper.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6023CBA1AB47C3F002B7CC9 /* GiffyApiHelper.m in Sources */,
 				E6023CB71AB47B65002B7CC9 /* Gif.m in Sources */,
 				E6023CAF1AB47A21002B7CC9 /* CoreDataStack.m in Sources */,
 				E6023C8D1AB479A8002B7CC9 /* GifApp.xcdatamodeld in Sources */,
@@ -468,6 +474,7 @@
 				E6023CA91AB479A8002B7CC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6023CAA1AB479A8002B7CC9 /* Build configuration list for PBXNativeTarget "GifAppTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +483,7 @@
 				E6023CAC1AB479A8002B7CC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
