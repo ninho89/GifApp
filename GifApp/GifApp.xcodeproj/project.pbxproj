@@ -10,11 +10,12 @@
 		E6023C871AB479A8002B7CC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023C861AB479A8002B7CC9 /* main.m */; };
 		E6023C8A1AB479A8002B7CC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023C891AB479A8002B7CC9 /* AppDelegate.m */; };
 		E6023C8D1AB479A8002B7CC9 /* GifApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6023C8B1AB479A8002B7CC9 /* GifApp.xcdatamodeld */; };
-		E6023C901AB479A8002B7CC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023C8F1AB479A8002B7CC9 /* ViewController.m */; };
+		E6023C901AB479A8002B7CC9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023C8F1AB479A8002B7CC9 /* MainViewController.m */; };
 		E6023C931AB479A8002B7CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6023C911AB479A8002B7CC9 /* Main.storyboard */; };
 		E6023C951AB479A8002B7CC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6023C941AB479A8002B7CC9 /* Images.xcassets */; };
 		E6023C981AB479A8002B7CC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6023C961AB479A8002B7CC9 /* LaunchScreen.xib */; };
 		E6023CA41AB479A8002B7CC9 /* GifAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CA31AB479A8002B7CC9 /* GifAppTests.m */; };
+		E6023CAF1AB47A21002B7CC9 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CAE1AB47A21002B7CC9 /* CoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +35,16 @@
 		E6023C881AB479A8002B7CC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6023C891AB479A8002B7CC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E6023C8C1AB479A8002B7CC9 /* GifApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GifApp.xcdatamodel; sourceTree = "<group>"; };
-		E6023C8E1AB479A8002B7CC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E6023C8F1AB479A8002B7CC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E6023C8E1AB479A8002B7CC9 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E6023C8F1AB479A8002B7CC9 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		E6023C921AB479A8002B7CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6023C941AB479A8002B7CC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E6023C971AB479A8002B7CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E6023C9D1AB479A8002B7CC9 /* GifAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6023CA21AB479A8002B7CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6023CA31AB479A8002B7CC9 /* GifAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifAppTests.m; sourceTree = "<group>"; };
+		E6023CAD1AB47A21002B7CC9 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		E6023CAE1AB47A21002B7CC9 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,13 +86,11 @@
 		E6023C831AB479A8002B7CC9 /* GifApp */ = {
 			isa = PBXGroup;
 			children = (
-				E6023C881AB479A8002B7CC9 /* AppDelegate.h */,
-				E6023C891AB479A8002B7CC9 /* AppDelegate.m */,
-				E6023C8E1AB479A8002B7CC9 /* ViewController.h */,
-				E6023C8F1AB479A8002B7CC9 /* ViewController.m */,
-				E6023C911AB479A8002B7CC9 /* Main.storyboard */,
+				E6023CB01AB47A28002B7CC9 /* AppDelegate */,
+				E6023CB11AB47A30002B7CC9 /* CoreData */,
+				E6023CB21AB47A36002B7CC9 /* Controllers */,
+				E6023CB31AB47A3E002B7CC9 /* Views */,
 				E6023C941AB479A8002B7CC9 /* Images.xcassets */,
-				E6023C961AB479A8002B7CC9 /* LaunchScreen.xib */,
 				E6023C8B1AB479A8002B7CC9 /* GifApp.xcdatamodeld */,
 				E6023C841AB479A8002B7CC9 /* Supporting Files */,
 			);
@@ -120,6 +121,42 @@
 				E6023CA21AB479A8002B7CC9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6023CB01AB47A28002B7CC9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E6023C881AB479A8002B7CC9 /* AppDelegate.h */,
+				E6023C891AB479A8002B7CC9 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E6023CB11AB47A30002B7CC9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E6023CAD1AB47A21002B7CC9 /* CoreDataStack.h */,
+				E6023CAE1AB47A21002B7CC9 /* CoreDataStack.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		E6023CB21AB47A36002B7CC9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6023C8E1AB479A8002B7CC9 /* MainViewController.h */,
+				E6023C8F1AB479A8002B7CC9 /* MainViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E6023CB31AB47A3E002B7CC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6023C911AB479A8002B7CC9 /* Main.storyboard */,
+				E6023C961AB479A8002B7CC9 /* LaunchScreen.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6023CAF1AB47A21002B7CC9 /* CoreDataStack.m in Sources */,
 				E6023C8D1AB479A8002B7CC9 /* GifApp.xcdatamodeld in Sources */,
 				E6023C8A1AB479A8002B7CC9 /* AppDelegate.m in Sources */,
-				E6023C901AB479A8002B7CC9 /* ViewController.m in Sources */,
+				E6023C901AB479A8002B7CC9 /* MainViewController.m in Sources */,
 				E6023C871AB479A8002B7CC9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
