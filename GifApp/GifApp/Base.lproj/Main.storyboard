@@ -7,7 +7,7 @@
         <!--Main View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainViewController" id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -24,7 +24,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0bo-jp-aKX">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="7jX-PV-Pu7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="7jX-PV-Pu7">
+                            <connections>
+                                <action selector="searchGifButton:" destination="vXZ-lx-hvc" id="DDk-aN-o40"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -34,7 +38,7 @@
         <!--Search View Controller-->
         <scene sceneID="Rci-GF-dsg">
             <objects>
-                <viewController id="6qF-mW-YJg" customClass="SearchViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchViewController" id="6qF-mW-YJg" customClass="SearchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rSV-bp-7X4"/>
                         <viewControllerLayoutGuide type="bottom" id="s0C-3t-kg6"/>
@@ -64,7 +68,7 @@
         <!--Detail Gif View Controller-->
         <scene sceneID="0qu-ZF-oRI">
             <objects>
-                <viewController id="SqK-Ka-JfT" customClass="DetailGifViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailGifViewController" id="SqK-Ka-JfT" customClass="DetailGifViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gYm-gS-fDH"/>
                         <viewControllerLayoutGuide type="bottom" id="Wg8-DP-Pyj"/>

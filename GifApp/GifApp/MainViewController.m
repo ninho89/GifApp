@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "SearchViewController.h"
 
 @interface MainViewController ()
 
@@ -22,6 +23,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)searchGifButton:(id)sender {
+    SearchViewController *searchViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"searchViewController"];
+    searchViewController.managedObjectContext = self.managedObjectContext;
+    [self.navigationController pushViewController:searchViewController animated:YES];
+
 }
 
 @end
