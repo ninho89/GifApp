@@ -19,6 +19,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Pj1-nH-wPT">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="kX8-b1-oPu"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="6eH-Oc-wYN"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -26,10 +30,13 @@
                     <navigationItem key="navigationItem" id="0bo-jp-aKX">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="7jX-PV-Pu7">
                             <connections>
-                                <action selector="searchGifButton:" destination="vXZ-lx-hvc" id="DDk-aN-o40"/>
+                                <action selector="searchGifButton:" destination="vXZ-lx-hvc" id="fak-uY-uCO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Pj1-nH-wPT" id="A4V-LR-Vly"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
