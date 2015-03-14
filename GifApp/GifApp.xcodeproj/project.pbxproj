@@ -22,6 +22,8 @@
 		E6023CC01AB47D44002B7CC9 /* GifDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CBF1AB47D44002B7CC9 /* GifDownloader.m */; };
 		E6023CC31AB47E2F002B7CC9 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CC21AB47E2F002B7CC9 /* SearchViewController.m */; };
 		E6023CC61AB47E69002B7CC9 /* DetailGifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CC51AB47E69002B7CC9 /* DetailGifViewController.m */; };
+		E6023CCA1AB47EAB002B7CC9 /* CustomGifTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6023CC81AB47EAB002B7CC9 /* CustomGifTableViewCell.m */; };
+		E6023CCB1AB47EAB002B7CC9 /* CustomGifTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6023CC91AB47EAB002B7CC9 /* CustomGifTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,9 @@
 		E6023CC21AB47E2F002B7CC9 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		E6023CC41AB47E69002B7CC9 /* DetailGifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailGifViewController.h; sourceTree = "<group>"; };
 		E6023CC51AB47E69002B7CC9 /* DetailGifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailGifViewController.m; sourceTree = "<group>"; };
+		E6023CC71AB47EAB002B7CC9 /* CustomGifTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGifTableViewCell.h; sourceTree = "<group>"; };
+		E6023CC81AB47EAB002B7CC9 /* CustomGifTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGifTableViewCell.m; sourceTree = "<group>"; };
+		E6023CC91AB47EAB002B7CC9 /* CustomGifTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomGifTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +174,9 @@
 				E6023CC21AB47E2F002B7CC9 /* SearchViewController.m */,
 				E6023CC41AB47E69002B7CC9 /* DetailGifViewController.h */,
 				E6023CC51AB47E69002B7CC9 /* DetailGifViewController.m */,
+				E6023CC71AB47EAB002B7CC9 /* CustomGifTableViewCell.h */,
+				E6023CC81AB47EAB002B7CC9 /* CustomGifTableViewCell.m */,
+				E6023CC91AB47EAB002B7CC9 /* CustomGifTableViewCell.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 				E6023C931AB479A8002B7CC9 /* Main.storyboard in Resources */,
 				E6023C981AB479A8002B7CC9 /* LaunchScreen.xib in Resources */,
 				E6023C951AB479A8002B7CC9 /* Images.xcassets in Resources */,
+				E6023CCB1AB47EAB002B7CC9 /* CustomGifTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +313,7 @@
 				E6023CAF1AB47A21002B7CC9 /* CoreDataStack.m in Sources */,
 				E6023C8D1AB479A8002B7CC9 /* GifApp.xcdatamodeld in Sources */,
 				E6023CC01AB47D44002B7CC9 /* GifDownloader.m in Sources */,
+				E6023CCA1AB47EAB002B7CC9 /* CustomGifTableViewCell.m in Sources */,
 				E6023C8A1AB479A8002B7CC9 /* AppDelegate.m in Sources */,
 				E6023C901AB479A8002B7CC9 /* MainViewController.m in Sources */,
 				E6023C871AB479A8002B7CC9 /* main.m in Sources */,
