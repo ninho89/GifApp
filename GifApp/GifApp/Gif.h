@@ -10,4 +10,6 @@
 
 @interface Gif : NSObject
 
+@property (nonatomic,strong) NSString *gifURL;
+
 @end

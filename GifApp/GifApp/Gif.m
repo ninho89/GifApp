@@ -10,6 +10,6 @@
 
 @implementation Gif
 
-@property (nonatomic,strong) NSString *gifURL;
+
 
 @end
