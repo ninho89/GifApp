@@ -15,6 +15,12 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Pj1-nH-wPT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0bo-jp-aKX">
@@ -24,6 +30,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1002" y="-444"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="Rci-GF-dsg">
+            <objects>
+                <viewController id="6qF-mW-YJg" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rSV-bp-7X4"/>
+                        <viewControllerLayoutGuide type="bottom" id="s0C-3t-kg6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ckR-eB-UQA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ViO-0e-YgM">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s0C-3t-kg6" firstAttribute="top" secondItem="ViO-0e-YgM" secondAttribute="bottom" id="9MD-xf-8w2"/>
+                            <constraint firstAttribute="trailing" secondItem="ViO-0e-YgM" secondAttribute="trailing" id="oQe-R1-4go"/>
+                            <constraint firstItem="ViO-0e-YgM" firstAttribute="top" secondItem="ckR-eB-UQA" secondAttribute="top" constant="44" id="wUn-et-BHR"/>
+                            <constraint firstItem="ViO-0e-YgM" firstAttribute="leading" secondItem="ckR-eB-UQA" secondAttribute="leading" id="zve-Vp-nvL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OpA-dm-WZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671" y="-444"/>
+        </scene>
+        <!--Detail Gif View Controller-->
+        <scene sceneID="0qu-ZF-oRI">
+            <objects>
+                <viewController id="SqK-Ka-JfT" customClass="DetailGifViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gYm-gS-fDH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wg8-DP-Pyj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EZ4-YA-NRs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hbL-s1-iq9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hbL-s1-iq9" firstAttribute="top" secondItem="EZ4-YA-NRs" secondAttribute="top" id="IHX-Ud-wcU"/>
+                            <constraint firstAttribute="trailing" secondItem="hbL-s1-iq9" secondAttribute="trailing" id="NbY-1D-N6y"/>
+                            <constraint firstItem="hbL-s1-iq9" firstAttribute="leading" secondItem="EZ4-YA-NRs" secondAttribute="leading" id="kT3-Qb-Qzg"/>
+                            <constraint firstItem="Wg8-DP-Pyj" firstAttribute="top" secondItem="hbL-s1-iq9" secondAttribute="bottom" constant="250" id="rEY-m0-eeM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJc-e7-spA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2339" y="-444"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FfB-R3-8A0">
